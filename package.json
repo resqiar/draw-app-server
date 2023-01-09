@@ -1,0 +1,22 @@
+{
+  "name": "guess-game-server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "tsc-watch --noClear -p ./tsconfig.json --onSuccess \"node ./dist/server.js\"",
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/server.js"
+  },
+  "dependencies": {
+    "fastify": "^4.10.2",
+    "fastify-socket.io": "^4.0.0",
+    "socket.io": "^4.5.4"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.15",
+    "tsc-watch": "^6.0.0",
+    "types-fastify-socket.io": "^0.0.1",
+    "typescript": "^4.9.4"
+  }
+}
